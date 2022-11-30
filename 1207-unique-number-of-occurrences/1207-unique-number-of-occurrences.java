@@ -7,9 +7,9 @@ class Solution {
         }
         Arrays.sort(uarr);
         
-        for(int i=0;i<2000;i++){
+        for(int i=2000;i>0;i--){
             if(uarr[i]>0){
-                if(uarr[i]==uarr[i+1]) return false;
+                if(uarr[i]==uarr[i-1]) return false;
             }
         }
         return true;
