@@ -3,7 +3,7 @@ class Solution {
         int[] arr = new int[123];
 
         for(int i=0;i<s.length();i++){
-                arr[s.charAt(i)]++;
+            arr[s.charAt(i)]++;
         }
 
         Pair[] p = new Pair[123];
@@ -21,9 +21,7 @@ class Solution {
 //        }
         StringBuilder str = new StringBuilder();
         for (Pair pair : p) {
-            for(int i=0;i<pair.feq;i++){
-                str.append(pair.ch);
-            }
+                str.append(String.valueOf(pair.ch).repeat(pair.feq));
         }
 
         return str.toString();
