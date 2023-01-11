@@ -7,9 +7,10 @@ class Solution {
             if(h.containsKey(target-nums[i])){
                 arr[1]=i;
                 arr[0]=h.get(target-nums[i]);
+                return arr;
             }
             h.put(nums[i],i);
         }
-        return arr;
+        return null;
     }
 }
