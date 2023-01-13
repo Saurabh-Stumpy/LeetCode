@@ -24,6 +24,6 @@ class Solution {
         }
         count = Math.max(count,i-start);
         //System.out.println(Arrays.toString(bool));
-        return count<1?s.length():count;
+        return count;
     }
 }
