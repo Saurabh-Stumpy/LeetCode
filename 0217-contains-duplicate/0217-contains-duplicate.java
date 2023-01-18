@@ -3,11 +3,11 @@ class Solution {
         HashSet<Integer> h = new HashSet<>();
         
         for(int i:nums){
-            if(h.contains(i)){
-                return true;
+            if(!h.contains(i)){
+                h.add(i);
             }
             else{
-                h.add(i);
+                return true;
             }
         }
         return false;
