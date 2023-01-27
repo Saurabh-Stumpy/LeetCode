@@ -3,10 +3,8 @@ class Solution {
         int[] arr = new int[nums.length];
         int j=0;
         for(int i=0;i<n;i++){
-            arr[j]=nums[i];
-            j++;
-            arr[j]=nums[i+n];
-            j++;
+            arr[j++]=nums[i];
+            arr[j++]=nums[i+n];
         }
         
         return arr;
