@@ -11,6 +11,9 @@ class Solution {
             }
             while (j>=i){
 //                System.out.println(s.charAt(i)+" "+s.charAt(j));
+                if(max>j-i){
+                break;
+            }
                 if(s.charAt(i)==s.charAt(j)){
                     if(ifPalindrome(s,i,j)){
                         if(max<j-i){
