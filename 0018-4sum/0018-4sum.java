@@ -3,18 +3,6 @@ class Solution {
         List<List<Integer>> arr = new ArrayList<>();
         
         if(nums.length<4) return arr;
-
-        if(nums.length == 4){
-            if((long)nums[0]+nums[1]+nums[2]+nums[3]==target){
-                List<Integer> li = new ArrayList<>();
-                li.add(nums[0]);
-                li.add(nums[1]);
-                li.add(nums[2]);
-                li.add(nums[3]);
-                arr.add(li);
-            }
-            return arr;
-        }
         
         Arrays.sort(nums);
 //        for(int a:nums){
