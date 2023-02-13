@@ -25,18 +25,10 @@ class Solution {
         if(fast!=null) slow=slow.next;
 
         while (slow!=null){
-//            System.out.println(prev.num+" "+slow.num);
-//            if(slow.num!=prev.num) return false;
-//            System.out.print(slow.num+" ");
             max = Math.max(max,slow.val+prev.val);
             slow=slow.next;
             prev=prev.next;
         }
-//        System.out.println();
-//        while (prev!=null){
-//            System.out.print(prev.num+" ");
-//            prev=prev.next;
-//        }
         return max;
     }
 }
