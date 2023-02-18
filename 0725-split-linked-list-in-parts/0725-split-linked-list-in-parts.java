@@ -27,9 +27,11 @@ class Solution {
         ListNode prev = null;
         
         int i = 0;
-        arr[i] = curr;
+        //arr[i] = curr;
         
         while(curr!=null){
+            arr[i]=curr;
+            prev = curr;
             int tot = div;
             if(rem>0){
                 rem--;
@@ -42,10 +44,10 @@ class Solution {
             }
             prev.next=null;
             i++;
-            if(i<arr.length){
-                arr[i]=curr;
-                prev = curr;
-            }
+            // if(i<arr.length){
+            //     arr[i]=curr;
+            //     prev = curr;
+            // }
         }
     
         return arr;
