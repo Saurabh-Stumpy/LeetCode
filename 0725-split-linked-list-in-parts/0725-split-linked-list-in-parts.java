@@ -44,10 +44,6 @@ class Solution {
             }
             prev.next=null;
             i++;
-            // if(i<arr.length){
-            //     arr[i]=curr;
-            //     prev = curr;
-            // }
         }
     
         return arr;
