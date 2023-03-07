@@ -1,9 +1,9 @@
 class Solution {
     public long minimumTime(int[] time, int totalTrips) {
-        int maxTime = 0;
+        int maxTime = Integer.MAX_VALUE;
         
         for(int i :time){
-            maxTime = Math.max(maxTime,i);
+            maxTime = Math.min(maxTime,i);
         }
         long start = 1, end = (long)maxTime * totalTrips;
         
